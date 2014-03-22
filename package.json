@@ -1,0 +1,21 @@
+{
+  "name": "caleg",
+  "version": "0.0.0",
+  "description":"Yuk Kenali Calegmu - #BanggaGakGolput",
+  "main": "index.html",
+  "author": "Bayu Aldi Yansyah",
+  "license": "MIT",
+  "devDependencies": {
+    "open": "0.0.4",
+    "gulp-watch": "~0.5.0",
+    "gulp-util": "~2.2.14",
+    "gulp": "~3.5.1",
+    "connect": "~2.12.0",
+    "gulp-less": "~1.2.1",
+    "gulp-csso": "~0.2.3",
+    "gulp-concat": "~2.1.7",
+    "gulp-uglify": "~0.2.0",
+    "gulp-jshint": "~1.3.4",
+    "jshint-stylish": "~0.1.5"
+  }
+}

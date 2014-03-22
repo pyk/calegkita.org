@@ -1,0 +1,41 @@
+.as-a-wrapper() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+  width: @grid-width;
+  .clearfix();
+}
+
+.as-a-row(@gutter: @grid-gutter-width) {
+  margin-left:  (@gutter / -2);
+  margin-right: (@gutter / -2);
+  .clearfix();
+}
+
+.set-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @small-screen) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+.set-column-offset(@columns) {
+  @media (min-width: @small-screen) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.set-column-push(@columns) {
+  @media (min-width: @small-screen) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.set-column-pull(@columns) {
+  @media (min-width: @small-screen) {
+    right: percentage((@columns / @grid-columns));
+  }
+}

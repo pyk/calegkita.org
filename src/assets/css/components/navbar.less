@@ -1,0 +1,60 @@
+.navbar {
+  .container {
+    .row {
+      padding: 25px 0;
+      
+      // start logo
+      .logo {
+        .set-column(1);
+
+        h1 {
+          margin: 0;
+          a {
+            display: block;
+            background: #d72341;
+            width: 32px;
+            height: 32px;
+          }
+          // img {
+            // height: 40px;
+          // }
+        }
+      }
+      // end logo
+      // start menu
+      .menu {
+        .set-column(3);
+
+        .nav {
+          text-transform: uppercase;
+          width: 100%;
+          text-align: right;
+          margin-bottom: 20px;
+          margin-top: 5px;
+          margin: 0;
+          float: none;
+
+          ul {
+          }
+          li {
+            margin-left: 28px;
+            display: inline-block;
+            
+            a {
+              font-size: 12px;
+              color: #C3C3C3;
+              font-weight: 400;
+              text-decoration: none;
+              vertical-align: middle;
+              
+              &:hover {
+                color: #de3551;
+              }
+            }
+          }
+        }
+      }
+    // end menu 
+    }
+  }
+}

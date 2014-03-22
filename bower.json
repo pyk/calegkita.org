@@ -1,0 +1,28 @@
+{
+  "name": "Caleg",
+  "version": "0.0.0",
+  "authors": [
+    "Bayu Aldi Yansyah <bayualdiyansyah@gmail.com>"
+  ],
+  "description": "Yuk Kenali Calegmu - #BanggaGakGolput",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.1.0",
+    "normalize-less": "*",
+    "angular": "~1.2.11",
+    "angular-route": "~1.2.11"
+  },
+  "dependencies": {
+    "normalize-css": "~3.0.0",
+    "angular-loading-bar": "~0.3.0"
+  }
+}
