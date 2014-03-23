@@ -1,16 +1,32 @@
 <!doctype html>
-<html lang="id" ng-app="caleg">
+<html lang="id" ng-app="caleg" prefix="og: http://ogp.me/ns/website#">
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yuk Kenali Calegmu! - #BanggaGakGolput</title>
+  <meta name="description" content="Dalam Pemilu 2014 jumlah pemilih muda mencapai 53 juta lebih, itu artinya 28% dari total pemilih adalah Pemuda Indonesia. Sebagai anak muda kita berperan penting menentukan siapa yang akan mewakili aspirasi rakyat. Jika orang-orang yang selama ini gerogoti uang Rakyat masih duduk leha-leha di parlemen, Golput hanya memperburuk keadaan. Yuk kita perbaiki hal ini! Yuk kenali para caleg!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/libs/angular.min.js"></script>
   <script src="assets/libs/angular-route.min.js"></script>
   <script src="assets/libs/loading-bar.min.js"></script>
   <script src="assets/js/app.js"></script>
+  
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@calegkitaorg">
+  <meta name="twitter:creator" content="@peeyek, @WafiqSehat">
+  <meta name="twitter:title" content="Yuk Kenali Calegmu! - #BanngaGakGolput">
+  <meta name="twitter:description" content="Dalam Pemilu 2014 jumlah pemilih muda mencapai 53 juta lebih, itu artinya 28% dari total pemilih adalah Pemuda Indonesia. Sebagai anak muda kita berperan penting menentukan siapa yang akan mewakili aspirasi rakyat. Jika orang-orang yang selama ini gerogoti uang Rakyat masih duduk leha-leha di parlemen, Golput hanya memperburuk keadaan. Yuk kita perbaiki hal ini! Yuk kenali para caleg!">
+  <meta name="twitter:image:src" content="http://calegkita.org/assets/images/640x300-illustration.jpg">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yuk Kenali Calegmu! - #BanngaGakGolput" />
+  <meta property="og:description" content="Dalam Pemilu 2014 jumlah pemilih muda mencapai 53 juta lebih, itu artinya 28% dari total pemilih adalah Pemuda Indonesia. Sebagai anak muda kita berperan penting menentukan siapa yang akan mewakili aspirasi rakyat. Jika orang-orang yang selama ini gerogoti uang Rakyat masih duduk leha-leha di parlemen, Golput hanya memperburuk keadaan. Yuk kita perbaiki hal ini! Yuk kenali para caleg!" />
+  <meta property="og:url" content="http://calegkita.org" />
+  <meta property="og:image" content="http://calegkita.org/assets/images/640x300-illustration.jpg" />
 </head>
 <body>
   <!-- NOTIF -->
@@ -43,7 +59,6 @@
           <li><a href="#/dapil">daerah pemilihan</a></li>
           <li><a href="#/sumberdata">sumber data</a></li>
           <li><a href="#/tentang">tentang</a></li>
-          <!-- <li><a href="#/tentang">hubungi hallo@yukkenalicalegmu.org</a></li> -->
         </ul>
       </div>
     </div>
@@ -59,12 +74,21 @@
           <ul class="nav right">
             <li><a href="#/tentang">&copy; 2014 Bayu &amp; Wafiq</li>
             <li><a href="#/sumberdata">sumber data</a></li>
-            <li><a href="#">hubungi hallo@yukkenalicalegmu.org</a></li>
+            <li><a href="#">hubungi hallo@calegkita.org</a></li>
           </ul>
         </div>
 
       </div>
     </div>
   </div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
 </body>
 </html>
