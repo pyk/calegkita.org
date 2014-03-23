@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bayu Aldi Yansyah -- Idea & Web Developer -- @peeyek
+    Wafiq Sehat -- Creative Director -- @WafiqSehat
+
+# THANKS
+
+    pemiluapi.org
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, LESS, Bootstrap
+    javascript, AngularJs

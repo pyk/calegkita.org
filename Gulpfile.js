@@ -29,6 +29,22 @@ gulp.task("images", function () {
   gulp.src("./src/assets/images/*.*")
     .pipe(gulp.dest("./build/assets/images/"))
 })
+// rootFile
+var roots = [
+  "./src/CNAME",
+  "./src/apple-touch-icon-precomposed.png",
+  "./src/browserconfig.xml",
+  "./src/crossdomain.xml",
+  "./src/favicon.ico",
+  "./src/humans.txt",
+  "./src/robots.txt",
+  "./src/tile-wide.png",
+  "./src/tile.png"
+]
+gulp.task("rootFile", function () {
+  gulp.src(roots)
+    .pipe(gulp.dest("./build/"))
+})
 /*
   LESS
 
@@ -114,7 +130,7 @@ gulp.task("watch", function () {
   BUILD
 
  */
-var tasks = ["layout", "views", "images", "less", "app", "angularlibs"]
+var tasks = ["layout", "views", "images", "rootFile", "less", "app", "angularlibs"]
 gulp.task("build", tasks, function() {})
 /*
   Server
