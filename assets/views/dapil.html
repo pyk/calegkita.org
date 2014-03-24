@@ -1,5 +1,6 @@
-<div class="dapil">
-<div class="container" ng-controller="DapilCtrl">
+<div class="dapil" ng-controller="DapilCtrl">
+<h4 class="loading-status" ng-hide="!statusContent">Loading...</h4>
+<div class="container" ng-hide="statusContent">
 <div class="row">
   <!-- dapil-content -->
   <div class="dapil-content">

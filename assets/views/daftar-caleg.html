@@ -1,1 +1,56 @@
-<h1>daftar caleg</h1>
+<div class="daftar-caleg" ng-controller="DaftarCalegCtrl">
+<h4 class="loading-status" ng-hide="!statusContent">Loading...</h4>
+<div class="container" ng-hide="statusContent">
+<div class="row">
+  <!-- daftar-caleg-content -->
+  <div class="daftar-caleg-content">
+    <h4>daftar calon legislatif</h4>
+    <p class="meta-dapil">dapil {{dapil.nama}} di provinsi {{ provinsi.nama }} </p>
+    <!-- input-group -->
+    <div class="input-group">
+      <input type="text" ng-model="search" class="search-query" placeholder="Cari nama calon legislatif atau nomor urut">    
+    </div>
+    <!-- /input-group -->
+    <!-- contoh-pencarian -->
+    <div class="contoh-pencarian">
+        Contoh pencarian 
+        <a href="" ng-click="search = 'sidoarjo'">Sidoarjo</a>
+        <a href="" ng-click="search = 'Nganjuk'">Nganjuk</a>
+        <a href="" ng-click="search = 'DPR'">DPR</a>
+        <a href="" ng-click="search = 'DPD'">DPD</a>
+    </div>
+    <!-- /contoh-pencarian -->
+  </div>
+  <!-- /daftar-caleg-content -->
+</div>
+<!-- list-dapil -->
+<div class="row">
+<div class="list-dapil">
+  <table class="table">
+    <thead class="thead">
+      <tr class="tr">
+      <th>Nomor</th>
+      <th>Nama Dapil</th>
+      <th>Lembaga</th>
+      <th class="provinsi">Provinsi</th>
+      <th></th>
+      </tr>
+    </thead>
+    <tbody class="tbody">
+      <tr class="tr dapil-desc" ng-repeat="dapil in semuaDapil | filter:search">
+        <td class="nomor">{{semuaDapil.indexOf(dapil) + 1}}</td>
+        <td class="nama">{{dapil.nama}}</td>
+        <td class="lembaga">{{dapil.nama_lembaga}}</td>
+        <td class="provinsi">{{dapil.provinsi.nama}}</td>
+        <td class="link-daftar-caleg">
+          <a href="#/dapil/{{dapil.id}}">Lihat para caleg</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+</div>
+<!-- /list-dapil -->
+</div>
+</div>  
